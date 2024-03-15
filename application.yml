@@ -1,1 +1,13 @@
 
+spring:
+  config:
+    activate:
+      on-profile:
+  datasource:
+    password: ${database.password}
+    url: jdbc:postgresql://localhost:5432/candidates
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
